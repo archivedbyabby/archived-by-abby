@@ -220,3 +220,13 @@ function router() {
 
 window.addEventListener("hashchange", router);
 router();
+
+// Always scroll to top when navigating pages
+window.addEventListener("hashchange", () => {
+  window.scrollTo(0, 0);
+});
+
+// Also run on initial page load
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
