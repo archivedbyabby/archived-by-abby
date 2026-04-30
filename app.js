@@ -10,6 +10,7 @@
 
 const AMAZON_LINK = "AMAZON_STOREFRONT_LINK_HERE";
 const DEFAULT_COLLECTION_LIMIT = 3;
+const SHOW_AMAZON = false;
 
 const categories = {
   "full": { title: "The Full Archive", subhead: "Everything I have ever posted to this site." },
@@ -148,8 +149,13 @@ function renderImage(className = "poster-frame", src = "", alt = "") {
 }
 
 function amazonStrip(extraClass = "") {
+  if (!SHOW_AMAZON) return ""; // 👈 hides it completely
+
   return `<section class="amazon-strip ${extraClass}">
-    <div><h2>Shop my Amazon Storefront!</h2><p>Full of products I’m loving and highly recommend.</p></div>
+    <div>
+      <h2>Shop my Amazon Storefront!</h2>
+      <p>Full of products I’m loving and highly recommend.</p>
+    </div>
     <a class="btn" href="${AMAZON_LINK}">Visit Now</a>
   </section>`;
 }
@@ -157,11 +163,14 @@ function amazonStrip(extraClass = "") {
 function sideWidgets() {
   return `<aside class="sidebar">
     <section class="side-box">
-      <div class="arch-image"><img src="assets/hero-image.jpg" alt="Hero image" /></div>
+      <div class="arch-image">
+        <img src="assets/hero-image.jpg" alt="Hero image" />
+      </div>
       <h3>Explore the Archives</h3>
       <p>Click below to browse my entire archive of posts!</p>
       <a class="btn btn-filled" href="#/archive/full">View the Full Archive</a>
     </section>
+
     <section class="categories">
       <h3>Categories</h3>
       <a href="#/archive/full">Full Archive</a>
@@ -170,11 +179,15 @@ function sideWidgets() {
       <a href="#/archive/gift-guides">Gift Guides</a>
       <a href="#/archive/lifestyle">Lifestyle</a>
     </section>
-    <section class="side-amazon">
-      <h3>Shop my Amazon Storefront!</h3>
-      <p>Full of products I’m loving and highly recommend.</p>
-      <a class="btn" href="${AMAZON_LINK}">Visit Now</a>
-    </section>
+
+    ${SHOW_AMAZON ? `
+      <section class="side-amazon">
+        <h3>Shop my Amazon Storefront!</h3>
+        <p>Full of products I’m loving and highly recommend.</p>
+        <a class="btn" href="${AMAZON_LINK}">Visit Now</a>
+      </section>
+    ` : ""}
+
   </aside>`;
 }
 
