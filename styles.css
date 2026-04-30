@@ -83,7 +83,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero { display: grid; grid-template-columns: minmax(260px, .82fr) minmax(0, 1.18fr); gap: clamp(28px, 5vw, 64px); align-items: center; overflow: hidden; }
 .hero-image, .arch-image { background: transparent; aspect-ratio: 1 / 1.08; border-radius: 50% 50% 0 0; overflow: hidden; }
 .hero-image { width: 100%; max-width: 430px; height: clamp(300px, 34vw, 430px); min-height: 0; justify-self: center; }
-.hero-image img { width: 100%; height: 100%; object-fit: contain; }
+.hero-image img { width: 100%; height: 100%; object-fit: cover; }
 .hero-copy { display: grid; gap: 18px; align-content: center; min-width: 0; position: relative; z-index: 1; }
 .hero h1 { font-size: clamp(3rem, 7vw, 5.8rem); }
 .hero h2 { font-size: clamp(2.3rem, 5vw, 4rem); margin-bottom: 1rem; }
