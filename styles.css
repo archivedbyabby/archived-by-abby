@@ -8,7 +8,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: auto; }
 body {
   margin: 0;
   background: var(--peach);
@@ -81,7 +81,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .amazon-strip .btn:hover, .side-amazon .btn:hover { background: var(--cream); color: var(--black); border-color: var(--cream); }
 
 .hero { display: grid; grid-template-columns: minmax(260px, .82fr) minmax(0, 1.18fr); gap: clamp(28px, 5vw, 64px); align-items: center; overflow: hidden; }
-.hero-image, .arch-image { background: #d7d7d7; aspect-ratio: 1 / 1.08; border-radius: 50% 50% 0 0; overflow: hidden; }
+.hero-image, .arch-image { background: transparent; aspect-ratio: 1 / 1.08; border-radius: 50% 50% 0 0; overflow: hidden; }
 .hero-image { width: 100%; max-width: 430px; height: clamp(300px, 34vw, 430px); min-height: 0; justify-self: center; }
 .hero-image img { width: 100%; height: 100%; object-fit: cover; }
 .hero-copy { display: grid; gap: 18px; align-content: center; min-width: 0; position: relative; z-index: 1; }
@@ -113,7 +113,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .scroller::-webkit-scrollbar-thumb { background: var(--olive); border-radius: 999px; }
 .post-poster { flex: 0 0 clamp(200px, 28vw, 280px); scroll-snap-align: start; background: var(--peach); display: block; overflow: hidden; }
 .post-poster:hover { transform: translateY(-6px); box-shadow: var(--soft-shadow); }
-.poster-frame { aspect-ratio: 2 / 3; background: #d7d7d7; overflow: hidden; transition: transform .25s ease; }
+.poster-frame { aspect-ratio: 2 / 3; margin: 0; background: transparent; overflow: hidden; transition: transform .25s ease; }
 .poster-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s ease; }
 .post-poster:hover .poster-frame { transform: translateY(-8px); }
 .post-poster:hover img { transform: scale(1.05); }
@@ -128,24 +128,23 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .archive-grid { background: var(--cream); padding: clamp(28px, 6vw, 72px) clamp(24px, 8vw, 96px); display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(32px, 6vw, 70px) 42px; }
 .archive-card { background: var(--peach); overflow: hidden; }
 .archive-card:hover { transform: translateY(-6px); box-shadow: var(--soft-shadow); }
-.archive-card .poster-frame { background: #d7d7d7; }
+.archive-card .poster-frame { background: transparent; }
 .archive-card:hover .poster-frame { transform: translateY(-6px); }
 .archive-card h3 { color: var(--olive); padding: 14px 18px 18px; font-size: clamp(1.35rem, 2vw, 2rem); }
 
-.template-note { background: rgba(75,75,48,.12); color: var(--black); border-left: 4px solid var(--olive); padding: 1rem 1.2rem; margin: 0 0 30px; font-size: .83rem; }
+
 
 .two-column { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(280px, .85fr); gap: 18px; align-items: start; }
 .article { background: var(--cream); padding: clamp(32px, 5vw, 56px); }
 .article h1 { font-size: clamp(2.4rem, 5vw, 4rem); max-width: 760px; }
 .article .subhead { font-size: 1.2rem; max-width: 620px; }
 .date { font-size: .78rem; margin: 28px 0; }
-.wide-placeholder { background: #d7d7d7; aspect-ratio: 16 / 9; margin: 28px 0; overflow: hidden; }
+.wide-placeholder { background: transparent; aspect-ratio: 16 / 9; margin: 28px 0; overflow: hidden; }
 .wide-placeholder img { width: 100%; height: 100%; object-fit: cover; }
 .article p { font-size: .86rem; }
 .product-card { width: min(225px, 100%); background: var(--olive); padding: 14px; margin: 44px 0; color: var(--cream); }
 .product-card:hover { transform: translateY(-5px); box-shadow: var(--soft-shadow); }
-.product-card .product-image { background: var(--cream); aspect-ratio: 1 / 1; margin-bottom: 12px; overflow: hidden; }
-.product-card img.product-image { object-fit: cover; }
+.product-card .product-image { display: block; width: 100%; aspect-ratio: 1 / 1; height: auto; margin-bottom: 12px; object-fit: cover; }
 .product-card .btn { width: 100%; min-width: 0; padding: .45rem .85rem; font-size: .95rem; }
 .product-card .btn:hover { background: var(--cream); color: var(--olive); border-color: var(--cream); }
 .about-callout { background: var(--black); color: var(--cream); padding: clamp(24px, 4vw, 44px); display: grid; grid-template-columns: 160px 1fr; gap: 36px; align-items: center; margin-top: 48px; }
@@ -209,12 +208,98 @@ textarea { min-height: 150px; resize: vertical; }
   .post-poster { flex-basis: min(250px, 78vw); }
   .amazon-strip { text-align: left; }
 }
-// Always scroll to top when navigating pages
-window.addEventListener("hashchange", () => {
-  window.scrollTo(0, 0);
-});
 
-// Also run on initial page load
-window.addEventListener("load", () => {
-  window.scrollTo(0, 0);
-});
+/* Image rendering: real images only, no gray/peach placeholder overlays */
+.poster-frame img,
+.wide-placeholder img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.empty-card {
+  display: flex;
+  align-items: center;
+  min-height: 180px;
+}
+
+/* Blog article title image: use articleImage in app.js for a wide image around 550x300px */
+.article-hero-image {
+  width: min(550px, 100%);
+  height: 300px;
+  margin: 28px 0;
+  overflow: hidden;
+  background: transparent;
+}
+.article-hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 620px) {
+  .article-hero-image {
+    height: auto;
+    aspect-ratio: 11 / 6;
+  }
+}
+
+
+/* Easier article editor blocks */
+.article-section-heading {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 48px 0 18px;
+}
+
+.article-small-heading {
+  font-family: "orpheus-pro-condensed", serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin: 34px 0 12px;
+}
+
+.article-button-row {
+  margin: 24px 0 34px;
+}
+
+.article-inline-image {
+  width: min(620px, 100%);
+  margin: 34px 0;
+  overflow: hidden;
+}
+
+.article-inline-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.article-note {
+  background: rgba(75, 75, 48, .12);
+  border-left: 4px solid var(--olive);
+  padding: 1rem 1.2rem;
+  margin: 28px 0;
+}
+
+.article-note p {
+  margin: 0;
+}
+
+.article-list {
+  margin: 20px 0 30px 1.2rem;
+  padding-left: 1rem;
+  font-size: .86rem;
+  line-height: 1.6;
+}
+
+.article-divider {
+  border: 0;
+  border-top: 1px solid rgba(52, 50, 49, .25);
+  margin: 42px 0;
+}
+
+.article-product-block {
+  margin: 44px 0;
+}
