@@ -303,3 +303,29 @@ textarea { min-height: 150px; resize: vertical; }
 .article-product-block {
   margin: 44px 0;
 }
+.image-caption {
+  font-size: 0.05rem;
+  color: var(--olive);
+  margin-top: -30px;
+  margin-bottom: 28px;
+  font-style: italic;
+}
+
+.article-subheading {
+  font-family: "orpheus-pro-condensed", serif;
+  font-size: 1.5rem;
+  margin: 32px 0 12px;
+}
+
+.article-button {
+  margin: 20px 0 32px;
+}
+.article-content a {
+  color: var(--olive);
+  text-decoration: underline;
+  transition: 0.2s ease;
+}
+
+.article-content a:hover {
+  color: var(--dark);
+}

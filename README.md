@@ -58,3 +58,22 @@ Example with a manual number:
 ```js
 { type: "product", name: "1. This Thing", image: "assets/amazon-product.jpg", link: "https://www.amazon.com/", button: "Buy On Amazon", copy: "Description here." }
 ```
+{
+  type: "image",
+  image: "assets/nas.jpg",
+  alt: "Nasturtiums in bloom",
+},
+{
+  type: "caption",
+  text: "Nasturtiums are colorful edible flowers that work well in containers.",
+},
+{
+  type: "heading",
+  text: "1. Nasturtiums",
+},
+{
+  type: "paragraph",
+  text: "Nasturtiums are one of my favorite edible flowers for container planting because they are colorful, easy to grow, and completely edible.",
+},
+
+'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@brittnixon">Brittany N</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>'

@@ -22,13 +22,13 @@ const categories = {
 
 const POSTS = [
   {
-    slug: "pool-bag-essentials",
-    title: "What to Pack In Your Pool Bag: 25 Essentials",
-    subhead: "Everything you need and more to enjoy your fun in the sun.",
-    date: "March 16, 2026",
+    slug: "edible-flowers-you-can-grow-in-pots",
+    title: "Edible Flowers You Can Grow in Pots (Perfect for Small Spaces)",
+    subhead: "These edible flowers are easy to grow, beautiful to style, and perfect for small-space living. No yard needed!",
+    date: "April 30, 2026",
     category: "outdoor-garden",
-    image: "assets/blog-post.jpg", // Card/grid image. Best size: 1000x1500px.
-    articleImage: "assets/blog-article-image.jpg", // Article title image. Best size: about 550x300px.
+    image: "assets/edible-flower-post.jpg", // Card/grid image. Best size: 1000x1500px.
+    articleImage: "assets/edible-flowers-article-image.jpg", // Article title image. Best size: about 550x300px.
     visible: true,
 
     /*
@@ -39,49 +39,248 @@ const POSTS = [
     content: [
       {
         type: "paragraph",
-        text: "This is placeholder article copy. Replace this with your intro paragraph, affiliate disclosure notes, and any context you want readers to have before the list begins."
+        text: "Having containers with beautiful flowers is a treat itself, but being able to eat them too is quite a delicious bonus. Whether it be colorful salad toppings, floral teas and drink garnishes, or even just to say you tried it, edible flowers bring both beauty and purpose to your space. "
       },
       {
         type: "paragraph",
-        text: "Use each product block as a template. You can change the button text to Buy On Amazon, Shop This Find, or Check out this inspiration on Pinterest."
+        text: "Even if you don’t have a full garden, many edible flowers can thrive in pots, making them perfect for small-space and container gardening. "
       },
       {
-        type: "button",
-        text: "Shop My Pool Bag Picks",
-        link: "https://www.amazon.com/"
+        type: "paragraph",
+        text: "A quick note: while edible flowers are beautiful and fun to use, not all flowers are safe to eat. Be sure to source culinary-grade, chemical-free varieties and confirm with the seller before consuming. "
       },
+      
       {
         type: "heading",
-        text: "My Favorite Pool Bag Essentials"
+        text: "Edible Flowers for Container Planting"
       },
+      {
+       type: "image",
+       image: "assets/nas.jpg",
+       },
+       {
+        type: "caption",
+        text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@brittnixon">Brittany N</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+      },
+     
+      {
+       type: "subheading",
+       text: "1. Nasturtiums ",
+      },
+      {
+        type: 'paragraph',
+        text: 'Nasturtiums are the perfect addition to your edible container garden. With their eye-catching circular leaf shape and gorgeous blooms with shades of yellow, orange, and red, they are guaranteed to liven up your containers. Every part of this lovely plant is edible, even the leaves, stems, and seeds! The flowers offer a unique peppery taste, making them stand out amongst the others with flavor. They make a lovely addition to salads, charcuterie boards, and even pesto! Nasturtiums come in both climbing, and bush-like varieties. Take your pick and enjoy! '
+      },
+      
+
+      {
+        type: "image",
+        image: "assets/cal.jpg",
+      },
+      {
+         type: "caption",
+         text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@anushkaasharma">Anushka Sharma</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+      },
+      
+      {
+        type: "subheading",
+        text: "2. Calendula",
+      },
+      {
+         type: 'paragraph',
+         text: 'Calendula plants are a powerhouse when it comes to health benefits. They are packed with Vitamins A and C making them an incredibly nutritious addition to dishes. You can use the bright petals as a colorful edible garnish, or as a pop of color in salads. Many even steep the petals in oil or tea for medicinal purposes! When it comes to choosing calendula, ensure you are seeking Calendula officinalis, not ornamental marigolds, as those may not be culinary safe.'
+      },
+
+
+      {
+        type: "image",
+        image: "assets/but.jpg",
+      },
+      {
+        type: "caption",
+        text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@rachilli">Rachilli</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+      },
+        
+      {
+        type: "subheading",
+        text: "3. Bachelor’s Buttons ",
+      },
+      {
+        type: 'paragraph',
+        text: 'Bachelor’s Buttons are a charming and delicate addition to any edible container garden. Known for their soft, fringed petals in shades of blue, pink, purple, and white, they bring a light and airy feel to your pots. The flowers have a very mild, slightly sweet to spicy flavor. They work especially well sprinkled over salads, desserts, or even drinks for a pop of color. They are quite easy to grow and thrive in containers, making them a great low-maintenance option. ',
+      },
+
+
+      {
+        type: "image",
+        image: "assets/snap.jpg",
+      },
+      {
+        type: "caption",
+        text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@joyqalipai">Joy</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+      },
+          
+      {
+        type: "subheading",
+        text: "4. Snapdragons ",
+      },
+      {
+        type: 'paragraph',
+        text: 'Snapdragons add height and structure to your containers with their tall, vibrant blooms in a wide range of colors. While they are technically edible, they have a slightly bitter taste, so they are best used as a decorative element rather than for flavor. Their unique shape makes them perfect for elevating charcuterie boards, cakes, and drink garnishes. If you’re looking to create a visually striking container garden, snapdragons are a great choice to mix in with more delicate blooms and add more height.',
+      },
+
+
+      {
+        type: "image",
+        image: "assets/lav.jpg",
+      },
+      {
+        type: "caption",
+        text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@dina_nas">Dina Nasyrova</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+      },
+            
+      {
+        type: "subheading",
+        text: "5. Lavender",
+      },
+      {
+        type: 'paragraph',
+        text: 'Lavender is an absolute classic when it comes to edible flowers, known for its calming fragrance and soft purple tones. It grows beautifully in containers, especially when given plenty of sunlight and well-draining soil. The flavor is slightly sweet and floral with a hint of earthiness, making it ideal for baking, teas, and syrups. A little goes a long way with lavender, as its flavor can be quite strong, but when used properly, it adds a sophisticated touch to both sweet and savory dishes.',
+      },
+
+
+      {
+        type: "image",
+        image: "assets/chive.jpg",
+      },
+      {
+        type: "caption",
+        text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@robpumphrey">Rob Pumphrey</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+      },
+              
+      {
+        type: "subheading",
+                text: "6. Chive Blossoms",
+                },
+                {
+                 type: 'paragraph',
+                 text: 'Chive blossoms are one of the most functional edible flowers you can grow in containers. These pom-pom shaped blooms carry a mild onion flavor, like chives themselves, making them perfect for savory dishes. You can sprinkle the petals over salads, eggs, or baked potatoes, or even infuse them into oils and vinegars. Not only are they useful in the kitchen, but they also a little bit of whimsical texture and look to your container garden!',
+                },
+
+
+                {
+                  type: "image",
+                  image: "assets/dian.jpg",
+                  },
+                  {
+                   type: "caption",
+                   text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@tracminhvu">Trac Vu</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+                 },
+                
+                  {
+                  type: "subheading",
+                  text: "7. Dianthus",
+                  },
+                  {
+                   type: 'paragraph',
+                   text: 'Dianthus flowers are known for their cute ruffled petals and beautiful color variations, often featuring pinks, reds, and whites with intricate patterns. They have a light, clove-like flavor that adds a subtle spice to dishes. These blooms are perfect for decorating desserts, salads, and drinks, giving your creations a polished feel. Dianthus plants stay fairly compact, which makes them especially well-suited for container gardening.',
+                  },
+
+                  {
+                    type: "image",
+                    image: "assets/fu.jpg",
+                    },
+                    {
+                     type: "caption",
+                     text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@dcloss">Danielle Closs</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+                   },
+                  
+                    {
+                    type: "subheading",
+                    text: "8. Fuchsia",
+                    },
+                    {
+                     type: 'paragraph',
+                     text: 'Dianthus flowers are known for their cute ruffled petals and beautiful color variations, often featuring pinks, reds, and whites with intricate patterns. They have a light, clove-like flavor that adds a subtle spice to dishes. These blooms are perfect for decorating desserts, salads, and drinks, giving your creations a polished feel. Dianthus plants stay fairly compact, which makes them especially well-suited for container gardening.',
+                    },
+
+
+                    {
+                      type: "image",
+                      image: "assets/dah.jpg",
+                      },
+                      {
+                       type: "caption",
+                       text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@annaratzlaff">Anna Ratzlaff</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+                     },
+                    
+                      {
+                      type: "subheading",
+                      text: "9. Dahlias",
+                      },
+                      {
+                       type: 'paragraph',
+                       text: 'Dahlias bring bold color and dramatic blooms to any container garden. Their petals are edible and offer a surprisingly crisp texture with a mild flavor that can range from slightly sweet to subtly spicy, depending on the variety. They work well sliced into salads or used as a decorative garnish for larger dishes. With so many shapes and colors to choose from, dahlias are a great way to make your container garden feel full and vibrant!',
+                      },
+
+
+                      {
+                        type: "image",
+                        image: "assets/vio.jpg",
+                        },
+                        {
+                         type: "caption",
+                         text: 'Photo by <a style="text-decoration: underline;" href="https://unsplash.com/@naopp">Naoki Suzuki</a> on <a style="text-decoration: underline;" href="https://unsplash.com/">Unsplash</a>',
+                       },
+                      
+                        {
+                        type: "subheading",
+                        text: "10. Violas",
+                        },
+                        {
+                         type: 'paragraph',
+                         text: 'Violas are one of the most popular edible flowers, and for good reason. Their small, delicate blooms come in a wide range of colors and often feature intricate patterns that make them stand out. The flavor is mild and slightly sweet, making them perfect for desserts, salads, and drink garnishes. They are incredibly easy to grow in containers and bloom generously, giving you plenty to work with throughout the season.',
+                        },
+
+                        {
+                          type: "heading",
+                          text: "Safe Organic Fertilizers & Pest Control for Edible Flowers"
+                        },
+                        {
+                          type: 'paragraph',
+                          text: 'When growing edible flowers in containers, it’s especially important to be mindful of what you’re using on your plants. Since you’ll be consuming these blooms, sticking to organic, food-safe fertilizers and gentle pest control methods is always the best approach.',
+                        },
+                        {
+                          type: 'paragraph',
+                          text: 'Always apply sprays in the early morning or evening to avoid leaf burn and try to treat pests early before they spread. Healthy, well-fed plants are naturally more resistant to pests, so keeping up with fertilizing goes a long way.',
+                        },
+                        {
+                          type: "subheading",
+                          text: "Recommended Organic Pest Control:",
+                          },
+                    
+
+
       {
         type: "product",
-        name: "This Thing",
-        image: "assets/amazon-product.jpg",
-        link: "https://www.amazon.com/",
-        button: "Buy On Amazon",
-        copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Add your product description here."
-      },
+        name: "Bonide Captain Jack's Neem Max",
+        image: "assets/neem.jpg",
+        link: "https://amzn.to/3QEbOLu",
+        button: "Shop Now",
+        copy: "A versatile, organic neem-based spray that helps control insects and fungal issues while being safe for use on edible plants and garden produce.",
+        },
+        {
+          type: "subheading",
+          text: "Recommended Organic Fertilizer:",
+          },
       {
         type: "product",
-        name: "This Thing",
-        image: "",
-        link: "#",
-        button: "Buy On Amazon",
-        copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Add your product description here."
+        name: "Neptune's Harvest Fish & Seaweed Liquid Fertilizer",
+        image: "assets/neptune.jpg",
+        link: "https://amzn.to/427O30J",
+        button: "Shop Now",
+        copy: "An organic fish and seaweed blend fertilizer that delivers a rich mix of nutrients to promote strong growth, vibrant plants, and healthy yields across your garden.",
       },
-      {
-        type: "product",
-        name: "This Thing",
-        image: "",
-        link: "#",
-        button: "Buy On Amazon",
-        copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Add your product description here."
-      },
-      {
-        type: "note",
-        text: "Tip: You can use this note block for a quick reminder, affiliate disclaimer, or personal comment inside a post."
-      }
       
     ]
   },
@@ -299,6 +498,13 @@ function renderContentBlock(block) {
 
   if (type === "product") {
     return productBlock(block);
+  }
+  if (block.type === "caption") {
+    return `<p class="image-caption">${block.text}</p>`;
+  }
+  
+  if (block.type === "subheading") {
+    return `<h3 class="article-subheading">${block.text}</h3>`;
   }
 
   return "";
