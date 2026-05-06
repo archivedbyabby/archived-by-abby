@@ -285,19 +285,185 @@ const POSTS = [
     ]
   },
   {
-    slug: "other-post",
-    title: "Check Out These Awesome Finds",
-    subhead: "Everything you need and more to enjoy your fun in the sun.",
-    date: "March 16, 2026",
+    slug: "eclectic-wall-decor-ideas-for-eclectic-home",
+    title: "Unique Wall Decor Ideas for an Eclectic Home",
+    subhead: "Give your space a little more character with these unique wall décor pieces found on Amazon!",
+    date: "May 6, 2026",
     category: "home-living",
-    image: "assets/blog-post.jpg",
-    articleImage: "assets/blog-article-image.jpg",
-    visible: false,
+    image: "assets/eclectic-wall-decor.jpg",
+    articleImage: "assets/eclectic-wall-decor-image.jpg",
+    visible: true,
     content: [
-      { type: "paragraph", text: "This is a second post template. Replace this intro with your own body copy." },
-      { type: "heading", text: "Favorite Finds" },
-      { type: "product", name: "This Thing", image: "assets/amazon-product.jpg", link: "https://www.amazon.com/", button: "Buy On Amazon", copy: "Add your product description here." },
-      { type: "button", text: "Visit My Amazon Storefront", link: "https://www.amazon.com/" }
+      { type: "paragraph", text: "2026 is the year of eclectic homes and bringing uniqueness back into our living spaces. It’s time to embrace your open-mindedness and bring life and character onto your walls! These decor finds prove that homes feel best when they reflect the people living in them. Check out all my favorite trending ideas below." },
+      { type: "heading", text: "Eclectic Wall Decor Ideas" },
+      {
+        type: "subheading",
+        text: "1.	Retro-Style Wall Clocks ",
+      },
+      {
+        type: "iframe",
+        src: "https://assets.pinterest.com/ext/embed.html?id=1106337464736484721",
+        width: 450,
+        height: 700
+      },
+      {
+        type: 'paragraph',
+        text: 'Even though we have access to the time on our phones, clocks still make great wall décor pieces. I find that retro-style clocks bring a fun and campy style to your space, especially if they have an intriguing shape or color.'},
+      { type: "product", name: "JONES CLOCKS® Movie Wall Clock", image: "assets/clock-1.jpg", link: "https://amzn.to/4f3qTQI", button: "Buy On Amazon", },
+      { type: "product", name: "Foxtop Wooden Mid Century Modern Wall Clock", image: "assets/clock-2.jpg", link: "https://amzn.to/4cSDF37", button: "Buy On Amazon", },
+      { type: "product", name: "Small Mid Century Modern Sunburst Wall Clock", image: "assets/clock-3.jpg", link: "https://amzn.to/4d1MhTW", button: "Buy On Amazon", },
+      {
+        type: "subheading",
+        text: "2.	Stained Glass Pieces",
+      },
+      {
+        type: "iframe",
+        src: "https://assets.pinterest.com/ext/embed.html?id=703756189030162",
+        width: 450,
+        height: 700
+      },
+      {
+        type: 'paragraph',
+        text: 'When we think of stained-glass pieces, we usually visual them against a window. However, there’s no law against displaying them on your wall as well! They bring a beautiful pop of color and shine that can contrast well with other typical wall décor items.', },
+      
+      { type: "product", name: "Lemon Leaf Suncatchers - Real Stained Glass Window Hangers", image: "assets/glass-1.jpg", link: "https://amzn.to/42hLERa", button: "Buy On Amazon", },
+      { type: "product", name: "Sun and Sea Suncatcher with Iridescent Accent", image: "assets/glass-2.jpg", link: "https://amzn.to/3R2UPCz", button: "Buy On Amazon", },
+      { type: "product", name: "Geometric Design Style Suncatchers Stained Glass Window Panel", image: "assets/glass-3.jpg", link: "https://amzn.to/49dF1mK", button: "Buy On Amazon", },
+  
+      {
+        type: "subheading",
+        text: "3.	Floating Wall Shelves ",
+      },
+      {
+        type: 'paragraph',
+        text: 'Floating shelves along the wall are perfect for displaying beloved trinkets, plants, or photo frames. They make your walls more dynamic and balance out flatness. My favorite current floating shelf trends are rattan, combinations of rattan and wood, or wood with unique carvings. ', },
+      
+      { type: "product", name: "Floating Shelves for Wall", image: "assets/shelf-1.jpg", link: "https://amzn.to/3RnCmRe", button: "Buy On Amazon", },
+      { type: "product", name: "Rattan Wall Shelf Mid Century Modern Decor ", image: "assets/shelf-2.jpg", link: "https://amzn.to/4we10nv", button: "Buy On Amazon", },
+      { type: "product", name: "GRID FORTE Modern Wall Shelf with Arched Wood Design", image: "assets/shelf-3.jpg", link: "https://amzn.to/4cOUUlW", button: "Buy On Amazon", },
+  
+      {
+        type: "subheading",
+        text: "4.	Convex Mirror",
+      },
+      {
+        type: "iframe",
+        src: "https://assets.pinterest.com/ext/embed.html?id=1106337464736484819",
+        width: 438,
+        height: 450,
+      },
+      {
+        type: 'paragraph',
+        text: 'Why not include a more stand-out element like a convex mirror? This makes a great display piece because it adds both depth and personality to a space. The curved reflection creates a unique, almost vintage-inspired look that instantly draws the eye and brings a different perspective on your space. ', },
+      
+      { type: "product", name: "Gold Round Convex Mirror", image: "assets/convex.jpg", link: "https://amzn.to/4epWoEr", button: "Buy On Amazon", },
+      
+      {
+        type: "subheading",
+        text: "5.	Record Shelves",
+      },
+      {
+        type: "iframe",
+        src: "https://assets.pinterest.com/ext/embed.html?id=1106337464736484623",
+        width: 345,
+        height: 560,
+      },
+      {
+        type: 'paragraph',
+        text: 'If you’re one who likes to collect records, this is a great idea for you to try out. And if you don’t collect records, why not start now and turn them into wall décor? Using record wall shelving is a great way to show off your music taste and give ohmage to the magic of physical media. ', },
+      
+      { type: "product", name: "Gotega 8 Pack Vinyl Record Shelf Wall Mount", image: "assets/records.jpg", link: "https://amzn.to/4w7Npyd", button: "Buy On Amazon", },
+      { type: "product", name: "Vinyl Record Wall Mount", image: "assets/records-2.jpg", link: "https://amzn.to/3QHQiWh", button: "Buy On Amazon", },
+      
+      {
+        type: "subheading",
+        text: "6.	Macrame Tapestries",
+      },
+      {
+        type: 'paragraph',
+        text: 'Who doesn’t love the boho aesthetic? While macrame tapestries align closest to a boho theme, they truly can mesh well with any home style and aesthetic and bring soft texture to your wall. They come in so many unique shapes and sizes, and are incredibly easy to DIY as well!', },
+      
+      { type: "product", name: "Mkono Boho Wall Decor Mini Macrame Wall Hanging Art 3 Pack ", image: "assets/tapestry-1.jpg", link: "https://amzn.to/42gXnQ6", button: "Buy On Amazon", },
+      { type: "product", name: "Mkono 2 Pcs Macrame Woven Wall Hanging Boho Chic Geometric Art Decor", image: "assets/tapestry-2.jpg", link: "https://amzn.to/49341gH", button: "Buy On Amazon", },
+  
+      {
+        type: "subheading",
+        text: "7.	Taper Candle Holders",
+      },
+      {
+        type: 'paragraph',
+        text: 'Back in the day candles used to be a reliable source of light for peoples’ homes. Thankfully now we can rely on them as eclectic yet classy pieces of wall décor. You can find wall-hanging candle holders in so many interesting shapes and sizes. You can also find a plethora of taper candle styles as well in many colors!', },
+      
+      { type: "product", name: "Metal Wall Candle Sconce Holder Set of 2 Wall Mount Candle Holder", image: "assets/candles-1.jpg", link: "https://amzn.to/48ECguG", button: "Buy On Amazon", },
+      { type: "product", name: "Black Modern Taper Candle Sconces", image: "assets/candles-2.jpg", link: "https://amzn.to/4tiWUrx", button: "Buy On Amazon", },
+      { type: "product", name: "Light-Mocha Spiral Taper Candles for Home Decoration, 4 Pack", image: "assets/candles-3.jpg", link: "https://amzn.to/48MbBvY", button: "Buy On Amazon", },
+  
+      {
+        type: "subheading",
+        text: "8.	Plant Propagation Vases",
+      },
+      {
+        type: 'paragraph',
+        text: 'If you’ve got too many propagation cuttings cluttered around your tables, this is certainly a must-try idea. Plant propagation vases that can hang on the walls not only give your walls literal life, but they can become a functional way to keep plenty of propagations going without taking up too much room elsewhere!', },
+      
+      { type: "product", name: "Vumdua 4 Pack Glass Planters,", image: "assets/plant-1.jpg", link: "https://amzn.to/48Hd8TU", button: "Buy On Amazon", },
+      { type: "product", name: "Mkono Wall Hanging Glass Terrariums Planter Oblate Flower Vase for Hydroponics Plants", image: "assets/plant-2.jpg", link: "https://amzn.to/4u4P5qs", button: "Buy On Amazon", },
+      { type: "product", name: "GRID FORTE Wood Wall Arched Propagation Vases (Set of 4)", image: "assets/plant-3.jpg", link: "https://amzn.to/3PnGuAc", button: "Buy On Amazon", },
+  
+      {
+        type: "subheading",
+        text: "9.	Ceramics",
+      },
+      {
+        type: "iframe",
+        src: "https://assets.pinterest.com/ext/embed.html?id=1106337464736485321",
+        width: 450,
+        height: 700
+      },
+      {
+        type: 'paragraph',
+        text: 'There are so many beautiful ceramics out there in all shapes and sizes with stand-out color schemes. Some of the best ceramic pieces are ones you can hang on your wall. They can bring symbolism with a personal meaning or just be a pretty piece to show off.', },
+      
+      { type: "product", name: "ban.do Vintage Inspired Checkered Bag Decorative Ceramic Wall Vase", image: "assets/ceram-1.jpg", link: "https://amzn.to/42gXJpU", button: "Buy On Amazon", },
+      { type: "product", name: "Cactus Canyon Ceramics Spanish 3-Piece Fish Wall Hanger Set", image: "assets/ceram-2.jpg", link: "https://amzn.to/4d5N4mF", button: "Buy On Amazon", },
+      { type: "product", name: "Generic Hand-Painted Talavera Sun Wall Art", image: "assets/ceram-3.jpg", link: "https://amzn.to/4dqPWvN", button: "Buy On Amazon", },
+  
+      {
+        type: "subheading",
+        text: "10.	Metal Art",
+      },
+      {
+        type: 'paragraph',
+        text: 'Metal art is another versatile type of wall décor to include in your collection. Like ceramics, you can find anything from animals to florals, or you can keep the shape abstract. The sky is the limit with these kinds of pieces. ', },
+      
+      { type: "product", name: "Mango Gifts Rustic Sun Moon Star Metal Wall Art", image: "assets/metal-1.jpg", link: "https://amzn.to/42OE7td", button: "Buy On Amazon", },
+      { type: "product", name: "Oubasa Metal Flowers Wall Art Set of 3", image: "assets/metal-2.jpg", link: "https://amzn.to/3QMzYDD", button: "Buy On Amazon", },
+      { type: "product", name: "Zonon 1 Pcs Wacky Sun Metal Wall Art Outdoor Decor", image: "assets/metal-3.jpg", link: "https://amzn.to/4tPqbLt", button: "Buy On Amazon", },
+  
+      {
+        type: "subheading",
+        text: "11.	Wood Art",
+      },
+      {
+        type: 'paragraph',
+        text: 'Wood art is a classic staple piece to throw on the wall. I personally love how abstract a lot of wood pieces can be with geometric shapes, and playful designs. They bring an amazing mid-century modern feel to your space providing immense character. ', },
+      
+      { type: "product", name: "CroBlissful 2 Pcs Mid Century Modern Wall Art", image: "assets/wood-1.jpg", link: "https://amzn.to/4d5tKG7", button: "Buy On Amazon", },
+      { type: "product", name: "Musanpou Wooden Geometric Home Wall Decor", image: "assets/wood-2.jpg", link: "https://amzn.to/4nlR47p", button: "Buy On Amazon", },
+     
+      {
+        type: "subheading",
+        text: "12. Unique Frames",
+      },
+      {
+        type: 'paragraph',
+        text: 'Lastly on this list is unique frames. This is something to keep an eye out for, because it’s always good to keep an eye out for things that don’t just have a 90-degree angle. Playing with different wacky shapes in picture or mirror frames gives the wall movement, and people will certainly be eager to ask you where you purchased them from.', },
+      
+      { type: "product", name: "2 Pack Irregular Shaped Wood Photo Frame ", image: "assets/frame-1.jpg", link: "https://amzn.to/42Ubk6w", button: "Buy On Amazon", },
+      { type: "product", name: "3 Pack Irregular Shaped Photo Frame Natural Wood", image: "assets/frame-2.jpg", link: "https://amzn.to/4cTv40e", button: "Buy On Amazon", },
+      { type: "product", name: "MAGFLERUM Irregular Wall Mirror", image: "assets/frame-3.jpg", link: "https://amzn.to/3RlttaS", button: "Buy On Amazon", },
+     
+
     ]
   },
 
@@ -506,6 +672,19 @@ function renderContentBlock(block) {
   if (block.type === "subheading") {
     return `<h3 class="article-subheading">${block.text}</h3>`;
   }
+  if (block.type === "iframe") {
+    return `
+      <div class="article-embed">
+        <iframe
+          src="${block.src}"
+          height="${block.height || 700}"
+          width="${block.width || 450}"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+    `;
+  }
 
   return "";
 }
@@ -536,13 +715,12 @@ function blogPage(slug = "pool-bag-essentials") {
 
 function productBlock(item) {
   return `<section class="article-product-block">
+  <h3>${escapeHTML(item.name || "Product Name")}</h3>
     <div class="product-card">
       ${item.image ? `<img class="product-image" src="${item.image}" alt="${escapeHTML(item.name)}" loading="lazy" />` : ""}
       <a class="btn" href="${item.link || "#"}" target="_blank" rel="sponsored noopener">${escapeHTML(item.button || "Visit Link")}</a>
     </div>
-    <h3>${escapeHTML(item.name || "Product Name")}</h3>
-    <p>${escapeHTML(item.copy || "Add your product description here.")}</p>
-  </section>`;
+    </section>`;
 }
 
 function aboutPage() {
@@ -595,3 +773,5 @@ function router() {
 
 window.addEventListener("hashchange", router);
 router();
+
+
